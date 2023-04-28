@@ -1,0 +1,399 @@
+.main2 {
+    width: 100%;
+    height: calc(var(--vh, 1vh) * 100);
+    background: #48C4BB;
+    position: relative;
+}
+
+.main2 .content {
+    width: 1300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: row;
+}
+
+.main2 .content .text {
+    display: flex;
+    flex-direction: column;
+}
+
+.main2 .content .text span {
+    margin-top: 30px;
+    color: white;
+}
+
+.main2 .content .text span:last-child {
+    opacity: 0.7;
+}
+
+.main2 .content .image1 {
+    width: 462px;
+    height: 238px;
+}
+
+.main2 .image2 {
+    width: 40%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+}
+
+.main2 .image2.active {
+    animation: slide1 1s ease-in-out;
+}
+
+.main3 {
+    width: 100%;
+    height: calc(var(--vh, 1vh) * 100);
+    background: #48C4BB;
+    position: relative;
+}
+
+.main3 .content {
+    width: 1300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: row;
+}
+
+.main3 .content .text {
+    display: flex;
+    flex-direction: column;
+}
+
+.main3 .content .text span {
+    margin-top: 30px;
+    color: white;
+}
+
+.main3 .content .text span:last-child {
+    opacity: 0.7;
+}
+
+.main3 .content .image1 {
+    width: 462px;
+    height: 238px;
+}
+
+.main3 .image2 {
+    width: 40%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+}
+
+.main3 .image2.active {
+    animation: slide2346 1s ease-in-out;
+}
+
+
+.main4 {
+    width: 100%;
+    height: calc(var(--vh, 1vh) * 100);
+    background: #48C4BB;
+    position: relative;
+}
+
+.main4 .content {
+    width: 1300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: row;
+}
+
+.main4 .content .text {
+    display: flex;
+    flex-direction: column;
+}
+
+.main4 .content .text span {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.main4 .content a img {
+    width: 300px;
+}
+
+.main4 .content .image1 {
+    width: 462px;
+    height: 238px;
+}
+
+.main4 .image2 {
+    width: 40%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+}
+
+.main4 .image2.active {
+    animation: slide2346 1s ease-in-out;
+}
+
+
+.main5 {
+    width: 100%;
+    height: calc(var(--vh, 1vh) * 100);
+    background: #48C4BB;
+    position: relative;
+}
+
+.main5 .content {
+    width: 1300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: row;
+}
+
+.main5 .content .text {
+    display: flex;
+    flex-direction: column;
+}
+
+.main5 .content .text span {
+    margin-top: 30px;
+    color: white;
+}
+
+.main5 .content .image1 {
+    width: 462px;
+    height: 238px;
+}
+
+.main5 .image2 {
+    width: 40%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+}
+
+.main5 .image2.active {
+    animation: slide2346 1s ease-in-out;
+}
+
+.main6 {
+    width: 100%;
+    height: calc(var(--vh, 1vh) * 100);
+    background: #48C4BB;
+    position: relative;
+}
+
+.main6 .content {
+    width: 1300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: row;
+}
+
+.main6 .content .text {
+    display: flex;
+    flex-direction: column;
+}
+
+.main6 .content .text span {
+    margin-top: 30px;
+    color: white;
+}
+
+.main6 .content .text span:last-child {
+    opacity: 0.7;
+}
+
+.main6 .content .image1 {
+    width: 462px;
+    height: 238px;
+}
+
+.main6 .image2 {
+    width: 40%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+}
+
+.main6 .image2.active {
+    animation: slide5 1s ease-in-out;
+}
+
+.main7 {
+    width: 100%;
+    height: calc(var(--vh, 1vh) * 100);
+    background: #48C4BB;
+    position: relative;
+}
+
+.main7 .content {
+    width: 1300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: row;
+}
+
+.main7 .content .text {
+    display: flex;
+    flex-direction: column;
+}
+
+.main7 .content .text span {
+    margin-top: 30px;
+    color: white;
+}
+
+.main7 .content .image1 {
+    width: 462px;
+    height: 238px;
+}
+
+.main7 .image2 {
+    width: 40%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+}
+
+.main7 .image2.active {
+    animation: slide2346 1s ease-in-out;
+}
+
+@keyframes slide1 {
+    from {
+        left: 40%;
+        bottom: 400px;
+    }
+
+    to {
+        left: 50%;
+        bottom: 0;
+    }
+}
+
+@keyframes slide2346 {
+    from {
+        left: 50%;
+        bottom: -632px;
+    }
+
+    to {
+        left: 50%;
+        bottom: 0;
+    }
+}
+
+@keyframes slide5 {
+    from {
+        left: 3000px;
+        bottom: 0;
+    }
+
+    to {
+        left: 50%;
+        bottom: 0;
+    }
+}
+
+@keyframes m_slide1 {
+    from {
+        left: 50%;
+        bottom: 30%;
+    }
+
+    to {
+        left: 20%;
+        bottom: 10%;
+    }
+}
+
+@keyframes m_slide2346 {
+    from {
+        left: 50%;
+        bottom: -100%;
+    }
+
+    to {
+        left: 50%;
+        bottom: 0;
+    }
+}
+
+@keyframes m_slide5 {
+    from {
+        left: 500%;
+        bottom: 0;
+    }
+
+    to {
+        left: 50%;
+        bottom: 0;
+    }
+}
+
+/* 모바일 가로, 모바일 세로 (해상도 480px ~ 767px)*/
+@media all and (max-width:767px) {
+
+    .page .content {
+        width: 80%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        flex-direction: row;
+    }
+
+    .page .content .image1 {
+        width: 90%;
+        height: auto;
+    }
+
+    .page .image2 {
+        width: 300px;
+    }
+
+    .main3 .image2.active {
+        animation: m_slide2346 1s ease-in-out;
+    }
+
+    .main2 .image2 {
+        transform: translateX(-50%);
+    }
+
+    .main3 .image2 {
+        transform: translateX(-50%);
+    }
+
+    .main4 .image2 {
+        transform: translateX(-50%);
+    }
+
+    .main5 .image2 {
+        transform: translateX(-50%);
+    }
+
+    .main6 .image2 {
+        transform: translateX(-50%);
+    }
+
+    .main7 .image2 {
+        transform: translateX(-50%);
+    }
+}

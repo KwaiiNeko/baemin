@@ -1,0 +1,146 @@
+.main8 {
+    width: 100%;
+    height:calc(var(--vh, 1vh) * 100);
+    background: white;
+}
+
+.main8 .content {
+    width: 1400px;
+    height:calc(var(--vh, 1vh) * 100);
+    margin: auto;
+    position: relative;
+}
+
+.main8 .links {
+    width: 100%;
+}
+
+.main8 .links a {
+    display: inline-block;
+    margin-top: 10px;
+    width: 170px;
+}
+
+.main8 .links img {
+    height: 30px;
+}
+
+.main8 .icons {
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.main8 .icons i {
+    font-size: 45px;
+}
+
+.main8 .section1 {
+    width: 400px;
+    position: absolute;
+    top: 160px;
+}
+
+.buisnessInfo {
+    width: 90%;
+    position: absolute;
+    bottom: 100px;
+}
+
+.main8 .section2 {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 160px;
+    left: 50%;
+}
+
+.main8 .section2>img {
+    width: 300px;
+}
+
+.main8 .section2 img {
+    margin-top: 30px;
+    width: 200px;
+}
+
+.main8 .buisnessInfo {
+    font-size: 1.2em;
+    font-weight: 100;
+}
+
+.main8 .buisnessInfo a {
+    background: url(/image/link-line_01.png) center bottom / 100% 3px no-repeat;
+}
+
+.main8 p {
+    margin-bottom: 30px;
+}
+
+body>section.main8>div>div.section2>a {
+    display: inline-block;
+}
+
+/* 모바일 가로, 모바일 세로 (해상도 480px ~ 767px)*/
+@media all and (max-width:767px) {
+
+    .main8 .content {
+        width: 100%;
+    }
+
+    .main8 .section1 {
+        padding: 20px;
+        width: 300px;
+        top: 220px;
+    }
+
+    .main8 .section2 {
+        padding: 20px;
+        width: 100%;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .main8 .section2>img {
+        width: 150px;
+    }
+
+    .app_download {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .main8 .section2 img {
+        width: 150px;
+        margin-right: 25px;
+    }
+
+    .main8 .icons {
+        margin-top: 20px;
+    }
+
+    .main8 .icons i {
+        font-size: 2.0rem;
+    }
+
+    .main8 .buisnessInfo {
+        padding: 20px;
+        position: absolute;
+        font-size: 1.0em;
+        font-weight: 50;
+        bottom: 0;
+    }
+
+    .main8 .links a {
+        width: 120px;
+    }
+    
+    .main8 .links img {
+        height: 20px;
+    }
+}

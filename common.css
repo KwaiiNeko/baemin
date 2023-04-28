@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    /* scroll-behavior: smooth; */
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    color: black;
+}
+
+a:active {
+    color: black;
+}
+
+body {
+    width: 100%;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow: hidden;
+}
+
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.scroll{
+    position: fixed;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);    
+    z-index: 1000;
+}
+
+.scroll .scroll_img { 
+    width: 90px;
+}
+
+body>.pageDot {
+    display: none;
+    position: fixed;
+    flex-direction: column;    
+    z-index: 1000;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+body>.pageDot img {
+    width: 40x;
+    height: 40px;
+}
+
+body>.pageDot img:hover {
+    cursor: pointer;
+}
+
+.header {
+    width: 100%;
+    margin-top: 75px;    
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 1000;
+    transition: 1s;
+}
+
+.header .logo {
+    width: 10%;
+    height: auto;
+}
+
+.header .downloadBox {
+    position: relative;
+    visibility: hidden;
+}
+
+.header .download {
+    width: 30%;
+    height: auto;
+    all: unset;
+    cursor: pointer;
+    background: white;
+    font-weight: 1000;
+    font-size: 1.3em;
+    padding: 15px 30px;
+    border-radius: 30px;
+    color: rgba(72, 196, 187);
+}
+
+.downloadBox .downloadFlexBox {
+    width: 300px;
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    padding: 20px;
+    border: white 5px solid;
+    border-radius: 18px;
+    top: 100px;
+    gap: 15px;
+}
+
+.downloadBox .downloadFlexBox.active {
+    width: 300px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: white 5px solid;
+    border-radius: 18px;
+    top: 100px;
+    gap: 15px;
+}
+
+.downloadBox .downloadFlexBox a {
+    display: inline-block;
+}
+
+.downloadBox .downloadFlexBox a img {
+    width: 200px;
+}
+
+.downloadBox .downloadFlexBox .underline {
+    background-color: white;
+    width: 100%;
+    height: 3px;
+}
+
+.header .icons a {
+    font-size: 40px;
+    color: white;
+}
+
+.header .icons i {
+    margin-left: 15px;
+}
+
+/* 모바일 가로, 모바일 세로 (해상도 480px ~ 767px)*/ 
+@media all and (max-width:767px) {
+
+    .header .logo {
+        width: 30%;
+    }
+
+    .scroll{
+        bottom: 0;
+        left: 0;
+        transform: translateX(0);
+        margin: 20px;
+    }
+    
+    .scroll .scroll_img { 
+        width: 68px;
+    }
+    
+    body>.pageDot img {
+        width: 30x;
+        height: 30px;
+    }
+    
+    .header .download {
+        font-weight: 2000;
+        font-size: 1.0em;
+        padding: 15px 15px;
+    }
+}
