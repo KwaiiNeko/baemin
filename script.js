@@ -1,5 +1,3 @@
-history.scrollRestoration = "manual";
-
 const header = document.querySelector(".header");
 const downloadBox = document.querySelector(".downloadBox");
 const btn_download = document.querySelector(".downloadBox .download");
@@ -35,7 +33,7 @@ document.addEventListener("mousedown", (event) => {
 
 // 헤더 앱 다운로드 버튼
 btn_download.addEventListener("click", () => {
-  var mobileType = checkMobile();
+  const mobileType = checkMobile();
   if (mobileType === "AOS") {
     window.open(
       "https://play.google.com/store/apps/details?id=com.sampleapp",
@@ -49,7 +47,7 @@ btn_download.addEventListener("click", () => {
 });
 
 app_download.addEventListener("click", () => {
-  var mobileType = checkMobile();
+  const mobileType = checkMobile();
   if (mobileType === "AOS") {
     window.open(
       "https://play.google.com/store/apps/details?id=com.sampleapp",
@@ -88,6 +86,7 @@ document.addEventListener("touchend", (e) => {
       timer = setTimeout(function () {
         timer = null;
 
+        // 첫 페이지면 더이상 위로 이동X
         if (currentPage == 0) return;
         else {
           --currentPage;
@@ -106,6 +105,7 @@ document.addEventListener("touchend", (e) => {
       timer = setTimeout(function () {
         timer = null;
 
+        // 마지막 페이지면 더이상 아래로 이동X
         if (currentPage == 7) return;
         else {
           ++currentPage;
@@ -117,6 +117,7 @@ document.addEventListener("touchend", (e) => {
   }
 });
 
+// 마우스 휠 이벤트
 document.addEventListener(
   "wheel",
   (event) => {
@@ -128,8 +129,10 @@ document.addEventListener(
     if (!timer) {
       timer = setTimeout(function () {
         timer = null;
-        // 위로 휠업 된 경우
+
+        // 아래로 휠다운 된 경우
         if (event.deltaY > 0) {
+          // 마지막 페이지면 더이상 아래로 이동X
           if (currentPage == 7) return;
           else {
             ++currentPage;
@@ -137,8 +140,9 @@ document.addEventListener(
             screenLayout(currentPage);
           }
         }
-        // 아래로 휠다운 된 경우
+        // 위로 휠업 된 경우
         if (event.deltaY < 0) {
+          // 첫 페이지면 더이상 위로 이동X
           if (currentPage == 0) return;
           else {
             --currentPage;
@@ -151,8 +155,6 @@ document.addEventListener(
   },
   { passive: false }
 );
-
-// 이부분수정!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 for (i = 0; i < pageDots.length; i++) {
   pageDots[i].addEventListener("click", (event) => {
@@ -171,6 +173,10 @@ for (i = 0; i < pageDots.length; i++) {
     }
   });
 }
+
+window.addEventListener("resize", () => {
+  setScreenSize();
+});
 
 // 페이지 이동시 화면 레이아웃 그리기
 function screenLayout(currentPage) {
@@ -259,15 +265,14 @@ function drawPageDot(currentPage) {
 
 function setScreenSize() {
   let vh = window.innerHeight * 0.01;
-
-  //그런 다음 --vh 사용자 정의 속성의 값을 문서의 루트로 설정합니다.
   document.documentElement.style.setProperty("--vh", `${vh}px`);
 }
 
+// PC인지 모바일인지, 안드로이드인지 IOS인지 체크
 function checkMobile() {
   const mobileVerification = navigator.userAgent.toLowerCase();
 
-  var mobileType;
+  let mobileType;
 
   if (mobileVerification.indexOf("android") > -1) {
     mobileType = "AOS";
@@ -282,7 +287,10 @@ function checkMobile() {
   }
 }
 
+// 풀페이지 스크롤
 const scrollTo = (yPos, duration = 600) => {
+  // Easing function from https://gist.github.com/gre/1650294
+  const easeOutCubic = (t) => --t * t * t + 1;
   const startY = window.scrollY;
   const difference = yPos - startY;
   const startTime = performance.now();
@@ -298,6 +306,3 @@ const scrollTo = (yPos, duration = 600) => {
 
   move();
 };
-
-// Easing function from https://gist.github.com/gre/1650294
-const easeOutCubic = (t) => --t * t * t + 1;

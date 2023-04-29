@@ -1,5 +1,6 @@
 .main2 {
     width: 100%;
+    height: 100vh;
     height: calc(var(--vh, 1vh) * 100);
     background: #48C4BB;
     position: relative;
@@ -47,6 +48,7 @@
 
 .main3 {
     width: 100%;
+    height: 100vh;
     height: calc(var(--vh, 1vh) * 100);
     background: #48C4BB;
     position: relative;
@@ -95,6 +97,7 @@
 
 .main4 {
     width: 100%;
+    height: 100vh;
     height: calc(var(--vh, 1vh) * 100);
     background: #48C4BB;
     position: relative;
@@ -144,6 +147,7 @@
 
 .main5 {
     width: 100%;
+    height: 100vh;
     height: calc(var(--vh, 1vh) * 100);
     background: #48C4BB;
     position: relative;
@@ -187,6 +191,7 @@
 
 .main6 {
     width: 100%;
+    height: 100vh;
     height: calc(var(--vh, 1vh) * 100);
     background: #48C4BB;
     position: relative;
@@ -234,6 +239,7 @@
 
 .main7 {
     width: 100%;
+    height: 100vh;
     height: calc(var(--vh, 1vh) * 100);
     background: #48C4BB;
     position: relative;
