@@ -1,3 +1,5 @@
+history.scrollRestoration = "manual";
+
 const header = document.querySelector(".header");
 const downloadBox = document.querySelector(".downloadBox");
 const btn_download = document.querySelector(".downloadBox .download");
