@@ -1,6 +1,7 @@
 .titleImage {
     width: 100%;
     height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
     background-image: url("https://www.baemin.com/_next/static/images/main_02@2x.jpg");
     background-repeat: no-repeat;
     background-position: center;
@@ -115,10 +116,12 @@
 @media all and (max-width:767px) {
 
     .titleImage {
+        height: 100vh;
         height: calc(var(--vh, 1vh) * 100);
     }
     
     .main1 {
+        height: 100vh;
         height:calc(var(--vh, 1vh) * 100);
     }
 
